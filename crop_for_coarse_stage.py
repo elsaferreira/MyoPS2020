@@ -39,7 +39,7 @@ def crop_dataset_with_bbox(input_dir, output_dir, crop_bbox_min_hw, crop_bbox_ma
 if __name__ == "__main__":
     # "/home/guotai/disk2t/data/heart/MyoPS/data_raw"
     input_dir  = path_dict["MyoPS_data_dir"]  + "/data_raw"
-    output_dir = path_dict["MyoPS_data_dir"]  + "/data_preprocessed"
+    output_dir = path_dict["My_path"]  + "/data_preprocessed"
     if(not os.path.isdir(output_dir)):
         os.mkdir(output_dir)
     source_list = [200, 500, 600, 1220, 2221]
