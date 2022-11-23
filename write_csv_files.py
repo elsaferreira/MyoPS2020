@@ -80,7 +80,7 @@ def get_evaluation_image_pairs(test_csv, gt_seg_csv):
 
 if __name__ == "__main__":
     # create cvs file for training and testing images
-    data_dir  = path_dict["MyoPS_data_dir"]  + "/data_preprocessed"
+    data_dir  = path_dict["My_path"]  + "/data_preprocessed"
     modalities = ["C0", "DE", "T2"]
     for stage in ["train", "test"]:
         output_file = "config/data/data_{0:}.csv".format(stage)
