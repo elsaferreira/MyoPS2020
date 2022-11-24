@@ -21,7 +21,7 @@ def main():
     # reset data dir for configure
     config   = parse_config(cfg_file)
     data_dir = config['dataset']['root_dir']
-    data_dir = data_dir.replace('MyoPS_data_dir', path_dict['MyoPS_data_dir']) 
+    data_dir = data_dir.replace('My_path', path_dict['My_path']) 
     config['dataset']['root_dir'] = data_dir   
     agent = SegmentationAgent(config, stage)
     agent.run()

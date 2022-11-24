@@ -21,7 +21,7 @@ def main():
     # reset data dir of each fold for configure
     config   = parse_config(cfg_file)
     data_dir = config['dataset']['root_dir']
-    data_dir = data_dir.replace('MyoPS_data_dir', path_dict['MyoPS_data_dir'])
+    data_dir = data_dir.replace('My_path', path_dict['My_path'])
     config['dataset']['root_dir'] = data_dir
     for item in ['train_csv', 'valid_csv', 'test_csv']:
         config['dataset'][item] = config['dataset'][item].replace("foldi", "fold" + fold) 

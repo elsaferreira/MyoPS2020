@@ -23,7 +23,7 @@ if __name__ == "__main__":
     output_dir = str(sys.argv[2])
     #first_crop = "/mnt/data1/swzhai/dataset/MyoPS/data_preprocessed/imagesTs/crop_information.json"
     #second_crop = "/mnt/data1/swzhai/dataset/MyoPS/nnUNet_raw_data_base/nnUNet_raw_data/Task112_MyoPS/imagesTs/crop_information.json"
-    first_crop  = path_dict['MyoPS_data_dir']  + "/data_preprocessed/imagesTs/crop_information.json"
+    first_crop  = path_dict['My_path']  + "/data_preprocessed/imagesTs/crop_information.json"
     second_crop = path_dict['nnunet_raw_data_dir'] + "/Task112_MyoPS/imagesTs/crop_information.json"
     first_json  = load_json((first_crop))
     second_json = load_json(second_crop)

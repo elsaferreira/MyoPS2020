@@ -93,7 +93,7 @@ def crop_acc_mask(images_dir, images_output_dir, masks_dir, mask_suffix=None, ma
 if __name__ == "__main__":
     # root_dir = "/home/guotai/disk2t/data/heart/MyoPS/data_preprocessed"
     # nnUNet_data_dir = "/home/guotai/disk2t/projects/nnUNet/exp_dir/nnUNet_raw/nnUNet_raw_data/Task112_MyoPS"
-    root_dir = path_dict['MyoPS_data_dir'] + "/data_preprocessed"
+    root_dir = path_dict['My_path'] + "/data_preprocessed"
     nnUNet_data_dir = path_dict['nnunet_raw_data_dir'] + "/Task112_MyoPS"
     # Task112_MyoPS: use labelsTr(GTs) to crop and use predsTr(predictions) as coarse segmentation
     
